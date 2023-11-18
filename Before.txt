@@ -1,0 +1,195 @@
+<div class="slider-container-h" style="">
+  <div class="slider-h">
+    {% if section.settings.banner-1 != "blank" %}
+    {% if section.settings.banner-1-mob != "blank" %}
+            <div class="slide-h">
+      <div class="empty-space-mob">
+        <div class="slide-content-h-mob">
+          <h2>{{ section.settings['banner1-text'] }}</h2>
+          <p class="para-q">{{ section.settings['banner1-smtext'] }}</p>
+          <div class="image-banner-shop-now">
+            <a href="{{ section.settings.link-1 }}">{{ section.settings.button-1 }}</a>
+          </div>
+        </div>
+      </div>
+      <img class="mob-banner-q" src="{{ section.settings.banner-1-mob | image_url }}" alt="Image 1">
+      <img class="desk-banner-q" src="{{ section.settings.banner-1 | image_url }}" alt="Image 1">
+      <div class="slide-content-h slide-content-h-desk ">
+        <div class="text-wrapper-1">
+          <h2 class="one-m">{{ section.settings['banner1-text'] }}</h2>
+          <p class="para-q">{{ section.settings['banner1-smtext'] }}</p>
+          <div class="custom-image-banner-shop-now  shop-now-1">
+            <a href="{{ section.settings.link-1 }}">{{ section.settings.button-1 }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endif %}
+
+    {% if section.settings.banner-2 %}
+    {% if section.settings.banner-2-mob %}
+            <div class="slide-h">
+      <div class="empty-space-mob">
+        <div class="slide-content-h-mob">
+          <h2>{{ section.settings['banner2-text'] }}</h2>
+          <p class="para-q">{{ section.settings['banner2-smtext'] }}</p>
+          <div class="image-banner-shop-now">
+            <a href="{{ section.settings.link-2 }}">{{ section.settings.button-2 }}</a>
+          </div>
+        </div>
+      </div>
+      <img class="mob-banner-q" src="{{ section.settings.banner-2-mob | image_url }}" alt="Image 1">
+      <img class="desk-banner-q" src="{{  section.settings.banner-2 | image_url}}" alt="Image 2">
+      <div class="slide-content-h slide-content-h-desk">
+        <div class="text-wrapper-2">
+          <h2 class="two-m">{{ section.settings['banner2-text'] }}</h2>
+          <p class="para-q">{{ section.settings['banner2-smtext'] }}</p>
+          <div class="custom-image-banner-shop-now  shop-now-2">
+            <a href="{{ section.settings.link-2 }}">{{ section.settings.button-2 }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endif %}
+
+    {% if section.settings.banner-3 %}
+    {% if section.settings.banner-3-mob %}
+            <div class="slide-h">
+      <div class="empty-space-mob">
+        <div class="slide-content-h-mob">
+          <h2>{{ section.settings['banner3-text'] }}</h2>
+          <p class="para-q">{{ section.settings['banner3-smtext'] }}</p>
+          <div class="image-banner-shop-now">
+            <a href="{{ section.settings.link-3 }}">{{ section.settings.button-3 }}</a>
+          </div>
+        </div>
+      </div>
+      <img class="mob-banner-q" src="{{ section.settings.banner-3-mob | image_url }}" alt="Image 1">
+      <img class="desk-banner-q" src="{{  section.settings.banner-3 | image_url}}" alt="Image 3">
+      <div class="slide-content-h slide-content-h-new slide-content-h-desk">
+        <div class="text-wrapper-3">
+          <h2 class="three-m">{{ section.settings['banner3-text'] }}</h2>
+          <p class="para-q">{{ section.settings['banner3-smtext'] }}</p>
+          <div class="custom-image-banner-shop-now  shop-now-3">
+            <a href="{{ section.settings.link-3 }}">{{ section.settings.button-3 }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endif %}
+    {% if section.settings.banner-4 %}
+    {% if section.settings.banner-4-mob %}
+            <div class="slide-h">
+      <div class="empty-space-mob">
+        <div class="slide-content-h-mob">
+          <h2>{{ section.settings['banner4-text'] }}</h2>
+          <p class="para-q">{{ section.settings['banner4-smtext'] }}</p>
+          <div class="image-banner-shop-now">
+            <a href="{{ section.settings.link-4 }}">{{ section.settings.button-4 }}</a>
+          </div>
+        </div>
+      </div>
+      <img class="mob-banner-q" src="{{ section.settings.banner-4-mob | image_url }}" alt="Image 1">
+      <img class="desk-banner-q" src="{{  section.settings.banner-4 | image_url}}" alt="Image 3">
+      <div class="slide-content-h slide-content-h-new slide-content-h-desk">
+        <div class="text-wrapper-4">
+          <h2 class="three-m">{{ section.settings['banner4-text'] }}</h2>
+          <p class="para-q">{{ section.settings['banner4-smtext'] }}</p>
+          <div class="custom-image-banner-shop-now  shop-now-4">
+            <a href="{{ section.settings.link-4 }}">{{ section.settings.button-4 }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endif %}
+    {% if section.settings.banner-5 %}
+      {% if section.settings.banner-5-mob %}
+    <div class="slide-h">
+      <div class="empty-space-mob">
+        <div class="slide-content-h-mob">
+          <h2>{{ section.settings['banner5-text'] }}</h2>
+          <p class="para-q">{{ section.settings['banner5-smtext'] }}</p>
+          <div class="image-banner-shop-now">
+            <a href="{{ section.settings.link-5 }}">{{ section.settings.button-5 }}</a>
+          </div>
+        </div>
+      </div>
+      <img class="mob-banner-q" src="{{ section.settings.banner-5-mob | image_url }}" alt="Image 1">
+      <img class="desk-banner-q" src="{{  section.settings.banner-5 | image_url}}" alt="Image 3">
+      <div class="slide-content-h slide-content-h-new slide-content-h-desk">
+        <div class="text-wrapper-5">
+          <h2 class="three-m">{{ section.settings['banner5-text'] }}</h2>
+          <p class="para-q">{{ section.settings['banner5-smtext'] }}</p>
+          <div class="custom-image-banner-shop-now  shop-now-5">
+            <a href="{{ section.settings.link-5 }}">{{ section.settings.button-5 }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+      {% endif %}
+    {% endif %}
+    {% if section.settings.banner-6 %}
+    {% if section.settings.banner-6-mob %}
+          <div class="slide-h">
+      <div class="empty-space-mob">
+        <div class="slide-content-h-mob">
+          <h2>{{ section.settings['banner6-text'] }}</h2>
+          <p class="para-q">{{ section.settings['banner6-smtext'] }}</p>
+          <div class="image-banner-shop-now">
+            <a href="{{ section.settings.link-6 }}">{{ section.settings.button-6 }}</a>
+          </div>
+        </div>
+      </div>
+      <img class="mob-banner-q" src="{{ section.settings.banner-6-mob | image_url }}" alt="Image 1">
+      <img class="desk-banner-q" src="{{  section.settings.banner-6 | image_url}}" alt="Image 3">
+      <div class="slide-content-h slide-content-h-new slide-content-h-desk">
+        <div class="text-wrapper-3">
+          <h2 class="three-m">{{ section.settings['banner6-text'] }}</h2>
+          <p class="para-q">{{ section.settings['banner6-smtext'] }}</p>
+          <div class="custom-image-banner-shop-now  shop-now-6">
+            <a href="{{ section.settings.link-6 }}">{{ section.settings.button-6 }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endif %}
+    {% if section.settings.banner-7 %}
+    {% if section.settings.banner-7-mob %}
+            <div class="slide-h">
+      <div class="empty-space-mob">
+        <div class="slide-content-h-mob">
+          <h2>{{ section.settings['banner7-text'] }}</h2>
+          <p class="para-q">{{ section.settings['banner7-smtext'] }}</p>
+          <div class="image-banner-shop-now">
+            <a href="{{ section.settings.link-7 }}">{{ section.settings.button-7 }}</a>
+          </div>
+        </div>
+      </div>
+      <img class="mob-banner-q" src="{{ section.settings.banner-7-mob | image_url }}" alt="Image 1">
+      <img class="desk-banner-q" src="{{  section.settings.banner-7 | image_url}}" alt="Image 3">
+      <div class="slide-content-h slide-content-h-new slide-content-h-desk">
+        <div class="text-wrapper-7">
+          <h2 class="three-m">{{ section.settings['banner7-text'] }}</h2>
+          <p class="para-q">{{ section.settings['banner7-smtext'] }}</p>
+          <div class="custom-image-banner-shop-now  shop-now-7">
+            <a href="{{ section.settings.link-7 }}">{{ section.settings.button-7 }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endif %}
+    {% if request.page_type == 'page' %}
+    {% endif %}
+  </div>
+  <div class="my-button-wrapper">
+    <button class="prev-btn-h">&#10094;</button>
+    <button class="next-btn-h">&#10095;</button>
+    <div class="nav-dots-h"></div>
+  </div>
+</div>

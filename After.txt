@@ -1,0 +1,46 @@
+<div class="slider-container-h" style="">
+  <div class="slider-h">
+    {% for i in (1..7) %}
+      {% capture bannerKey %}banner-{{ i }}{% endcapture %}
+      {% capture mobBannerKey %}banner-{{ i }}-mob{% endcapture %}
+
+      {% if section.settings[bannerKey] %}
+        {% if section.settings[mobBannerKey] %}
+          <div class="slide-h">
+            <div class="empty-space-mob">
+              <div class="slide-content-h-mob">
+                {% capture textKey %}banner{{ i }}-text{% endcapture %}
+                <h2>{{ section.settings[textKey] }}</h2>
+                {% capture smTextKey %}banner{{ i }}-smtext{% endcapture %}
+                <p class="para-q">{{ section.settings[smTextKey] }}</p>
+                <div class="image-banner-shop-now">
+                  {% capture linkKey %}link-{{ i }}{% endcapture %}
+                  {% capture buttonKey %}button-{{ i }}{% endcapture %}
+                  <a href="{{ section.settings[linkKey] }}">{{ section.settings[buttonKey] }}</a>
+                </div>
+              </div>
+            </div>
+            <img class="mob-banner-q" src="{{ section.settings[mobBannerKey] | image_url }}" alt="Image {{ i }}">
+            <img class="desk-banner-q" src="{{ section.settings[bannerKey] | image_url }}" alt="Image {{ i }}">
+            <div class="slide-content-h slide-content-h-desk ">
+              <div class="text-wrapper-{{ i }}">
+                <h2 class="one-m">{{ section.settings[textKey] }}</h2>
+                <p class="para-q">{{ section.settings[smTextKey] }}</p>
+                <div class="custom-image-banner-shop-now shop-now-{{ i }}">
+                  <a href="{{ section.settings[linkKey] }}">{{ section.settings[buttonKey] }}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <!-- Navigation Buttons and Dots -->
+  <div class="my-button-wrapper">
+    <button class="prev-btn-h">&#10094;</button>
+    <button class="next-btn-h">&#10095;</button>
+    <div class="nav-dots-h"></div>
+  </div>
+</div>
